@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 이원우 - 이마트 - 22.09.29 </title>
+    <link rel="stylesheet" href="./css/style.css"> 
+    <!-- script:src -->
+    <script src="./js/jquery-1.11.3.js"></script>
+    <script src="./js/jquery.innerfade.js"></script>
+    <!--   // ● 함수 
+            // 실행문을 저장했다가 필요할때 꺼내쓰는 것 -->
+        <script>
+            // 페이드 - 플러그인 
+            $(function(){
+                $('.inner-fade').innerfade({
+                    animationtype:'fade',
+                    timeout:2000
+                })
+            });
+        </script>
+    
+</head>
+<body>
+    <!-- #wrap>header+#center+footer -->
+    <div id="wrap">
+        <header>
+            <!-- 로고 + 메뉴 -->
+            <!-- h1.logo>a>img -->
+            <h1 class="logo"><a href="./index.html"><img src="./images/logo.svg" alt="이마트로고"></a></h1>
+            <!-- .menu>ul>li*5>a{자주구매} -->
+            <div class="menu">
+                <ul>
+                    <li><a href="#">자주구매</a></li>
+                    <li><a href="#">세일중</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">기획전</a></li>
+                    <li><a href="#">이벤트 & 쿠폰</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="center">
+            <!-- 슬라이드 / 버튼들 / 공지사항 / 갤러리 -->
+            <!-- .slied+.btn+.contents -->
+            <!-- .slied>ul.inner-fade>li*5>a>img -->
+            <div class="slied">
+                <ul class="inner-fade">
+                    <li><a href="#"><img src="./images/01.jpg" alt="슬라이드1"></a></li>
+                    <li><a href="#"><img src="./images/02.jpg" alt="슬라이드2"></a></li>
+                    <li><a href="#"><img src="./images/03.jpg" alt="슬라이드3"></a></li>
+                    <li><a href="#"><img src="./images/04.jpg" alt="슬라이드4"></a></li>
+                    <li><a href="#"><img src="./images/05.jpg" alt="슬라이드5"></a></li>
+                </ul>
+            </div>
+
+
+            <div class="btns">
+                <!-- ul>li.btn$*7>a+span{쿠폰} -->
+                <ul>
+                    <li class="btn1"><a href="#"></a><span>쿠폰</span></li>
+                    <li class="btn2"><a href="#"></a><span>서비스</span></li>
+                    <li class="btn3"><a href="#"></a><span>베스트</span></li>
+                    <li class="btn4"><a href="#"></a><span>기획전</span></li>
+                    <li class="btn5"><a href="#"></a><span>채용정보</span></li>
+                    <li class="btn6"><a href="#"></a><span>오시는길</span></li>
+                    <li class="btn7"><a href="#"></a><span>보안센터</span></li>
+                </ul>
+            </div>
+            <div class="contents">
+                <!-- 공지사항 -->
+                <!-- .notice>h2+ul>li*7a+span -->
+                <div class="notice">
+                    <h2>공지사항</h2>
+                    <ul>
+                        <li><a href="#">추석사전매장 (3차) D-2..</a><span>22-09-29</span></li>
+                        <li><a href="#">이마트 딱 일주일!! HOT한 기획전........</a><span>22-09-29</span></li>
+                        <li><a href="#">런칭특가 할인 신상품을 확인하세요...</a><span>22-09-29</span></li>
+                        <li><a href="#">쓱 배송시간 확인하기!!!</a><span>22-09-29</span></li>
+                        <li><a href="#">추석 인기상품 40% 할인 마감임박!!!!!...</a><span>22-09-29</span></li>
+                        <li><a href="#">명절 GIFT 카달로그 받아가세요. 간편 웹 서비스..</a><span>22-09-29</span></li>
+                        <li><a href="#">구매 금액의 1% SSG 머니 증정....</a><span>22-09-29</span></li>
+                    </ul>
+                </div>
+                <!-- 배너 -->
+                <!-- .banner>a>img -->
+                <div class="banner"><a href="#"><img src="./images/banner.png" alt="배너"></a></div>
+            </div>
+        </div>
+        <footer>
+            <!-- 로고 / 주소 / SNS버튼 -->
+            <!-- .blogo+.copyright+.sns -->
+            <div class="blogo"> 
+               <a href="#"><img src="./images/blogo.svg" alt="이마트 하단 로고"></a>
+            </div>
+            <div class="copyright">
+                <p> 서울특별시 강남구 테헤란로 231 사업자등록번호: 870-88-01143 <br />
+                    Copyright &copy;  SSG All rights reserved.
+                </p>
+            </div>
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="./images/sns/f.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="./images/sns/p.png" alt="핀터레스트"></a></li>
+                    <li><a href="#"><img src="./images/sns/i.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="./images/sns/t.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="./images/sns/s.png" alt="카카오스토리"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
